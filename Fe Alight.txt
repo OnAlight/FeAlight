@@ -10,7 +10,7 @@ MainSection:NewButton("Inf Yield", "FE Admins Cmds", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
 end)
 
-MainSection:NewButton("Cmds X, "FE Admins Cmds", function()
+MainSection:NewButton("Cmd X", "FE Admins Cmds", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
 end)
 
@@ -28,6 +28,11 @@ MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
     end
 end)
+
+
+    --Aimlock
+    local Aimlock = Window:NewTab("Aimlock/Esp")
+    local AimlockSection = Aimlock:NewSection("Aimlock/Esp")
 
 
     --LOCAL PLAYER
@@ -949,9 +954,13 @@ end)
                      end
             end)
 
-            --Settings
+    --Settings
     local Settings = Window:NewTab("Settings")
     local SettingsSection = Settings:NewSection("Settings")
+
+    SettingsSection:NewKeybind("Hide UI", "You Can Choose A Keybind To Hide The UI", Enum.KeyCode.RightShift, function()
+        Library:ToggleUI()
+    end)
     
     
 
