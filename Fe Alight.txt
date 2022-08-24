@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("FE Alight", "BloodTheme")
+local Window = Library.CreateLib("FE Alight/Kenji", "BloodTheme")
 
 --Main
 local Main = Window:NewTab("Main")
@@ -32,8 +32,11 @@ end)
 
     --Aimlock
     local Aimlock = Window:NewTab("Aimlock/Esp")
-    local AimlockSection = Aimlock:NewSection("Aimlock/Esp")
+    local AimlockSection = Aimlock:NewSection("Aimlock")
+    
 
+
+    local AimlockSection = Aimlock:NewSection("Esp")
 
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
