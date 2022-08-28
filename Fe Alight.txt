@@ -29,12 +29,7 @@ MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
     end
 end)
 
-
-    --Aimlock
-    local Aimlock = Window:NewTab("Aimlock")
-    local AimlockSection = Aimlock:NewSection("Aimlock")
-    
-
+ 
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
