@@ -57,6 +57,14 @@ end)
     game.Players.LocalPlayer.Character.Humanoid.Health = 100
 end)
 
+PlayerSection:NewButton("Health 500", "Make's You're Health 50", function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 50
+end)
+
+PlayerSection:NewButton("Health 0", "Make's You're Health 100", function()
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end)
+
 
         --Other
         local Other = Window:NewTab("Other")
@@ -772,7 +780,7 @@ af = "Afrikaans",
           local AnimationsSection = Animations:NewSection("Animations")
 
           AnimationsSection:NewButton("Reset Animation", "Make's You Reset You're Avatar", function()
-            print("Clicked")
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
         end)
 
         
