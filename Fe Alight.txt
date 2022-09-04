@@ -61,7 +61,7 @@ PlayerSection:NewButton("Health 500", "Make's You're Health 50", function()
     game.Players.LocalPlayer.Character.Humanoid.Health = 50
 end)
 
-PlayerSection:NewButton("Health 0", "Make's You're Health 100", function()
+PlayerSection:NewButton("Health 0", "Make's You're Health 0", function()
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
 
