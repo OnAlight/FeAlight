@@ -29,12 +29,20 @@ MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
     end
 end)
 
+MainSection:NewToggle("God Speed", "Make You Run Faster Theb Light", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 950
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
  
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
 
-    PlayerSection:NewSlider("Walkspeed", "Slide You're WalkSpeed", 50000, 16, function(s)
+    PlayerSection:NewSlider("Walkspeed", "Slide You're WalkSpeed", 5000, 16, function(s)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
     end)
     
